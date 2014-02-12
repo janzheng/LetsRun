@@ -1,0 +1,180 @@
+
+// Grid settings moved to proto-grid-settings
+
+
+
+// *********************************************************
+// BREAKPOINTS
+// *********************************************************
+
+// Core breakpoints (small, medium, large, largest) are defined in grid settings. 
+// 	- Grid-only (setting a value for small will only affect small, a value for medium only affect medium, etc.)
+// $small: new-breakpoint(min-width 0px 6);                           // 0 and above
+$small-only: new-breakpoint(max-width 480px 6);                       // 0 up to 480
+// $medium: new-breakpoint(min-width 481px 8);                        // 481 and above
+$medium-only: new-breakpoint(min-width 481px max-width 767px 8);      // 481 to 767
+$medium-max: new-breakpoint(max-width 767px 8);                       // 0 up to 767
+
+// $large: new-breakpoint(min-width 768px 12);                        // 768 and above
+$large-only: new-breakpoint(min-width 768 max-width 979 12);          // 768 to 979
+$large-max: new-breakpoint(max-width 979px 12);                       // 0 up to 979
+
+$largest: new-breakpoint(min-width 980px 12);                         // 980 and above (infinite)
+
+@mixin show($size){
+   display: none !important;
+   @include media($size){display: block !important; }
+}
+
+// These can be used in the HTML doc, but it's preferred 
+// that display styles are kept in the CSS
+.show-small {@include show($small);} 
+.show-small-only {@include show($small-only);} 
+.show-small-max {@include show($small-only);} 
+
+.show-medium {@include show($medium);} 
+.show-medium-only {@include show($medium-only);} 
+.show-medium-max {@include show($medium-max);} 
+
+.show-large {@include show($large);} 
+.show-large-only {@include show($large-only);} 
+.show-large-max {@include show($large-max);} 
+
+.show-largest {@include show($largest);} 
+
+// sets the span for one breakpoint
+@mixin span($break, $cols){
+   @include media($break){@include span-columns($cols); }
+}
+
+// sets the span for all breakpoints
+@mixin span-all($sm, $md, $mdlg, $lg){
+   @include media($small){@include span-columns($sm); }
+   @include media($medium){@include span-columns($md); }
+   @include media($large){@include span-columns($mdlg); }
+   @include media($largest){@include span-columns($lg); }
+}
+// sets the span for all breakpoints, no gutter
+@mixin span-omega($sm, $md, $mdlg, $lg){
+   @include media($small){@include span-columns($sm); @include omega}
+   @include media($medium){@include span-columns($md); @include omega}
+   @include media($large){@include span-columns($mdlg); @include omega}
+   @include media($largest){@include span-columns($lg); @include omega}
+}
+
+// sets the span for all breakpoints, no pad
+@mixin span-pad($sm, $md, $mdlg, $lg){
+   @include media($small){@include span-columns($sm); @include pad}
+   @include media($medium){@include span-columns($md); @include pad}
+   @include media($large){@include span-columns($mdlg); @include pad}
+   @include media($largest){@include span-columns($lg); @include pad}
+}
+
+
+// *********************************************************
+// SETUP
+// *********************************************************
+
+// uses neat.bourbon to create a column container
+
+// from proto-grid-settings
+
+// 0 	=> 480: 6
+// 481 	=> 767: 8
+// 768  => 979: 12
+// 980  => inf: 12 
+.container { @include outer-container; }
+.row { @include span-all(6, 8, 12, 12); }
+
+
+
+
+
+// *********************************************************
+// REUSABLES
+// *********************************************************
+
+
+
+// Mixins, Functions, and other Reusables used by both the framework and wireframes
+// This file should not rely on any other file
+
+
+// *********************************************************
+// Floater
+// *********************************************************
+
+// A Floater class allows its contents to float above other content
+// Useful for floating medfgus and sections
+.floater {position: fixed; width: 100%; z-index: 99999;}
+
+
+// *********************************************************
+// pwToggle
+// *********************************************************
+
+// clicking on a pw-toggle element allows a target to be shown using the following code
+// CSS should be appropriately hiding content. This makes the content visible
+.pw-toggle-visible{
+   // height: 100% !important;
+   display: block !important;
+}
+
+// the button can be set to "active" state with the following styles
+.pw-toggle-active{
+   .menu {
+      fill: white; //SVG fill for menu buttons
+   }
+}
+
+
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+@mixin ease($speed){
+    -webkit-transition: all $speed ease;
+    -moz-transition: all $speed ease;
+    -ms-transition: all $speed ease;
+    -o-transition: all $speed ease;
+    transition: all $speed ease;
+}
+
+@mixin ease-out($speed){
+    -webkit-transition: all $speed ease-out 0;
+    -moz-transition: all $speed ease-out 0;
+    -ms-transition: all $speed ease-out 0;
+    -o-transition: all $speed ease-out 0;
+    transition: all $speed ease-out 0;
+}
+
+
+
+
+
+
+// *********************************************************
+// FlexBox Helpers
+// *********************************************************
+
+// div.parent {
+//   @include display-box;
+//   @include box-align(start);
+//   @include box-orient(horizontal);
+//   @include box-pack(start);
+// }
+
+// div.parent > div.child {
+//   @include box-flex(2);
+// }
+
+// // Alternative custom shorthand mixin.
+// div.parent {
+//   @include box($orient: horizontal, $pack: center, $align: stretch); // defaults
+//   @include box(vertical, start, stretch);
+// }
+%flex-box-center {
+	display: -webkit-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; align-items: center;
+}

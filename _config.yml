@@ -1,0 +1,48 @@
+
+# to run Jekyll, type "jekyll --serve"
+
+#tips on building a live menu: http://stackoverflow.com/questions/11495381/struggling-to-find-array-in-jekyll-config-file-site-navigation
+
+
+
+# specific Jekyll config
+url: /
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:title.html
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "notes.txt"]
+
+# adding '/' refers to server root, and " " refers to relative root (dropbox would use this)
+root: ""
+
+# debugging
+auto: true
+
+
+navigation:
+ - text: Home
+   url: /
+ - text: Tenzing Prlx
+   url: /tenzing.html
+   sub:
+   - text: Home
+     url: /pages/wf/
+   - text: Features
+     url: /pages/wf/features.html
+   - text: News
+     url: /pages/wf/news.html
+   - text: Support
+     url: /pages/wf/support.html
+ - text: Requirements
+   url: /pages/rq/
+   sub:
+   - text: Home
+     url: /pages/rq/
+   - text: More
+     url: /pages/rq/
+   - text: Links
+     url: /pages/rq/
+   - text: Here
+     url: /pages/rq/
+ - text: Comps
+   url: /pages/comps/

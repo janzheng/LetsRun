@@ -1,0 +1,226 @@
+
+Proto Wire
+old name: BarbWire
+
+an HTML-based wireframe concepting and presentation framework
+
+
+[carried over from "idea presenter"]
+
+
+
+
+Planned Features:
+----------------
+
+- HTML-based framework for static images layouts (comps), banners, static wireframes, and responsive wireframes, and live designs
+- support for presenting ideas in Mobile, Tablet, Desktop, along with TV and Projector devices
+- support hotspot clicks, simple animations, and Flash drop-ins
+- allow for easier presentation of:
+	- the effects of liquid layouts
+	- what will happen when text sizes are changed
+	- the font stack
+	- browser inconsistencies
+	- simple interaction such as :hover and :target
+	- JavaScript behaviors or dynamic AJAX content
+	- body font and sketch / wireframe font
+- responsive layout for project that needs responsive
+- organized menu system makes it easy to present large projects
+- make presenting any visual ideas quick
+- allow viewers to switch between responsive modes
+- frame views in iPhone or Android views on desktop and tablet machines
+- support extensibility for JS libraries and plugins
+- version & iteration archive
+- customizable vertical grid overlay
+- support asset re-use and modularity / "style tiles"
+- Sprites and style management through Compass
+- Forms: Formalize.js
+- Intro page
+- Template and Paging system (use Jekyll?)
+- Image
+- Easy-to-change SCSS settings, better organized than your portfolio
+- Youtube
+- Scroll stick support, similar to the GE example
+- wireframe notes and menu, branding
+- side slide menu
+
+
+v2 Features
+- document & page notes, annotation overlay
+- generated design template / style sheet
+- modernizr support
+
+- implement partials wisely, with components, and tutorial
+
+Implement Plug and Play Menu Systems
+- multi-level list menu http://apps.komposta.net/jquery/navgoco/demo/
+- side slider http://www.berriart.com/sidr/
+- side slider 2 http://www.jqueryscript.net/demo/Slick-App-Like-Sliding-Menu-Plugin-With-jQuery-Mmenu/examples/tutorial/submenus.html
+- dropdown: http://users.tpg.com.au/j_birch/plugins/superfish/
+- http://www.meanthemes.com/plugins/meanmenu/
+- http://www.meanthemes.com/plugins/meanmenu/
+- http://paulkinzett.github.io/toolbar/
+- step guide: http://usablica.github.io/intro.js/
+- http://bjk5.com/post/44698559168/breaking-down-amazons-mega-dropdown
+
+- modal container from Liztic, but make it scrollable when overflowing page
+- onFocus load animation / css fade in
+
+- Future: Support viewport width/height (vw, vh) for typography in SASS, though wait for more browsers to get on the boat
+
+- implement Project Hubs concept
+	- http://24ways.org/2013/project-hubs/
+
+
+Flexbox Grid System 
+- get away from Neat Bourbon
+- use SASS to create mixin system
+- SASS flexbox: https://github.com/mastastealth/sass-flex-mixin
+http://philipwalton.github.io/solved-by-flexbox/
+https://github.com/philipwalton/solved-by-flexbox/tree/master/_sass
+http://the-echoplex.net/flexyboxes/
+
+Flex Support Code
+- simplify/rename “justify-content” and “align-items” into “align-main” and “align-cross”
+
+
+Cool but not necessary
+-----------------
+- http://trentwalton.com/2013/11/06/a-better-way-to-layer-type/#comment-56184
+
+
+Third Party
+-----------------
+	- Royal Slider (hooks only- notice on needing to purchase)
+	- JQuery Waypoints http://imakewebthings.com/jquery-waypoints
+	- Modernizr
+	- FitText or Framer
+	- - Popcorn.js - Media-related JS - http://popcornjs.org/
+	
+
+Fonts
+-----------------
+Oswald - http://www.google.com/fonts/specimen/Oswald
+- sketch fonts
+- redacted font
+
+
+
+
+
+Current Prototypes
+-----------------
+- comp presentation tool
+- responsive wireframe presentation pages
+
+
+
+
+PAGES AND SITES TO PROTOTYPE
+-----------------
+http://www.addthis.com/
+https://marvelapp.com/ <-- I like this format. Maybe make the entire site this format?
+http://flickr.com
+http://creative.pinterest.com/features/place-pins/
+
+**** Do a few examples of Nurun presentation
+
+
+Steps Forward
+-----------------
+- Complete research & discovery
+- Rough wireframes and plan functionality
+- Implement HTML, Compass, & file system logic
+- Implement any JS transitions & hooks
+
+
+Research
+-----------------
+http://stuffandnonsense.co.uk/blog/about/time_to_stop_showing_clients_static_design_visuals/
+http://mondaybynoon.com/20080922/what-works-best-for-design-presentation/
+http://www.slideshare.net/afoster0/new-tools-for-responsive-design-15446217
+
+
+
+SASS
+Compass
+SUSY			- http://susy.oddbird.net/
+					https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh
+
+
+
+Other Examples
+-----------------
+Responsive Site Test - 		http://responsive.is/typecast.com
+							http://www.responsinator.com/?url=greendiablo.com
+Responsive Design Tester - 	http://mattkersley.com/responsive/
+							http://responsivepx.com/
+Screenfly wireframes 		http://quirktools.com/wires/
+
+
+
+
+
+
+
+HELP DOCS
+-----------------------------------------------
+
+BASIC
+------------------
+- Layout (Container / Row model)
+- SCSS use
+- Config.xml
+
+SCSS
+------------------
+- import rules and setup
+- SCSS w/ basic layout guide
+- mixins and reusables
+
+LAYOUT
+------------------
+- Floater
+- Creating a responsive, clickable/collapse Menu, (with Config, CSS, and code)
+- Using Boxes / NeatBourbon
+- Image Services
+	- Placehold.it
+		- <img src="http://placehold.it/350x150.png&text=Hello World">  
+	- PlaceKitten 
+		- <img src="http://placekitten.com/200/300" />
+	- PlaceDog 
+		- <img src="http://placedog.com/g/400/300" alt="" />
+	- Flickholdr
+		- <img src="http://flickholdr.com/200/300/sea,sun/bw" alt="" />  
+	- Dummy Image
+		- <img src="http://dummyimage.com/800x600/292929/e3e3e3&text=Your Mom Goes to College" alt="" />
+
+INTERACTIVE
+------------------
+- Show / Hide
+
+- Third Party
+	- JQuery
+	- JQuery UI
+	- Royal Slider (hooks only- notice on needing to purchase) http://dimsemenov.com/plugins/royal-slider/documentation/
+	
+	- Modernizr
+	- FitText or Framer
+	- JQuery Mutate (watch for changes) - http://www.jqui.net/jquery-projects/jquery-mutate-official/
+	- jLorem http://sanderkorvemaker.nl/jquery/jLorem.php
+	- JQuery Waypoints http://imakewebthings.com/jquery-waypoints
+	- Skrollr - scrolling library - https://github.com/Prinzhorn/skrollr
+	- Holder - client-gen placeholder images - https://github.com/imsky/holder
+	- BookCasey - Fittext with SASS (not using these for overhead - FitText or Framer (text auto-resizer)
+	- Forms: Formalize.js
+	- FluidBox: https://medium.com/coding-design/9c7fe9db92c7
+	- FlowType: for precise type width, esp. with Lorem generator http://simplefocus.com/flowtype/
+
+	- Holder.js with custom font
+		- Warrants a separate blog post
+		
+	- Menu
+		- jQ Menu Aim https://github.com/kamens/jQuery-menu-aim
+		- 
+
+

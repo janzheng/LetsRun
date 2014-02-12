@@ -1,0 +1,336 @@
+ 
+// core frameworks 
+@import 'bourbon/bourbon';
+@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
+@import "__proto-grid-settings";
+
+
+// framework files
+@import '__proto-reset';            // reset formula
+@import 'neat/neat'; 
+@import '__proto-framework';        // framework prototype framework. Grids, distances and sizes.
+
+//FLEXBOX Framework files
+//experimental - used in place of neat.bourbon helpers. Flexbox is cleaner and easier to implement, but will not be supported
+//under IE10. These are used for prototyping only and will not translate to production.
+@import 'other/flexbox';            // general flexbox mixin helpers
+@import '__proto-flexbox';          // supporting flexbox helpers and preset layouts
+
+//@import 'reusables';              // wireframe reusables- functions, mixins, etc. ///// DEPRECATED - Moved to end of Framework
+
+@import '__proto-main';             // proto styles
+
+// Compass frameworks
+@import "compass/utilities";
+
+@import "compass/css3/transform";
+
+// adding '/' refers to server root, and " " refers to relative root (dropbox would use this)
+// needs to match config.yml, but this is for css-loaded assets
+$siteroot: '../../';
+
+
+// 
+// Main Wireframe Files
+@import 'design';                   // wireframe design
+
+    
+// *********************************************************
+// LAYOUT SETUP
+// Guideline for setting up HTML and CSS inheritance
+// 
+// Setup:
+//    
+//    Floater (optional, fixed position floating menu)
+//    Article (logical divisions of content)
+//       Section (full width span containers - optional. One article can have many Sections)
+//          Container (breakpoints and column-set)
+//             Row
+//                Column 
+//                Column 
+//                Column 
+//                Column
+//          Container (breakpoints and column-set)
+//          Row 
+//                Column 
+//                Column 
+//                Column
+// 
+// *********************************************************
+
+
+//https://kuler.adobe.com/tasty-color-theme-3385142/edit/?copy=true
+//https://kuler.adobe.com/tasty-color-theme-3385142/edit/?copy=true&base=1&rule=Custom&selected=4&name=Copy%20of%20tasty&mode=rgb&rgbvalues=0.9529411764705882,0.2901960784313726,0.3254901960784314,0.9803921568627451,0.8901960784313725,0.7058823529411765,0.6666666666666666,0.7803921568627451,0.5372549019607843,0.46608695652173915,0.8,0.5982608695651921,0.3549295774647887,0.7690140845071067,0.84&swatchOrder=0,1,2,3,4
+// $red: #F34A53;
+$tan: #FAFFDE;
+// $ltgreen: #AAC789;
+// $dkgreen: #437356;
+// $blue: #1E4147;
+
+$ltblue: #5BC4D6;
+$ltgreen: #B8D734;
+
+$white : #ecf0f1;
+$gray: darken($white, 30);
+
+$midnight: #2c3e50;
+
+$red: #e74c3c;
+
+$peach: #ff5350;
+
+$blue: #347EED;
+$blue-dark: desaturate(darken($blue, 10), 10);
+$blue-light: lighten($blue, 10);
+
+$yellow: #FFEF35;
+$yellow-light: lighten($yellow, 15);
+$orange: #f39c12;
+$green: #31F042;
+$emerald: #2ecc71;
+$turqoise: #1abc9c;
+
+$fb-blue: #3B5998;
+$twitter-blue: #4099FF;
+
+
+
+
+
+
+
+
+
+
+//100, 300, 400, 700
+%roboto-slab {
+   // font-family: 'Roboto Slab', roboto, sans-serif;
+}
+%roboto {
+   font-family: 'Roboto', roboto, sans-serif;
+}
+%shadows {
+   font-family: 'Shadows Into Light Two', sans-serif;
+}
+
+
+%rotate180 {
+  -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+  -moz-transform: rotate(180deg);        /* FF */
+  -o-transform: rotate(180deg);          /* Opera */
+  -ms-transform: rotate(180deg);         /* IE9 */
+  transform: rotate(180deg);             /* W3C complaint browsers */
+}
+
+
+$base: 16px;
+$base2: 14px;
+$h1: 42px;
+$h2: 21px;
+
+%margins {
+   margin-top: $base;
+   margin-bottom: $base;
+}
+
+%round {
+   border-radius: 4px;
+}
+
+//all icons
+.icon { 
+   height: 25px; width: 25px; display: inline-block; 
+
+   .icon-right {
+      float: right;
+   }
+}
+
+
+
+
+
+
+
+
+body, html {
+   * {@extend %ease;}
+   // background-color: $midnight;
+   background-color: white;
+}
+
+a, a:hover, a:visited, a:focus {
+   text-decoration: none; color: black;
+   @extend %ease;
+}
+
+
+
+.content {
+   @include media($large-max) { @include pad($base/2); }
+
+   h1 {
+      @extend %shadows; @extend %margins;
+      font-size: $h1; font-weight: 700;
+      text-align: center;
+      color: $turqoise;
+      @extend %round; @extend .shadow;
+   }
+
+   h2 {
+      @extend %roboto; @extend %margins;
+      font-size: $h2; font-weight: 300;
+      margin-top: 0; color: $midnight;
+      text-align: center;
+      a {
+         color: $blue-light;
+         &:hover {color: $ltgreen}
+         @extend %ease;
+      }
+   }
+
+   .route-list {
+      @extend %roboto; font-weight: 300;
+      font-size: 21px;
+      @extend %margins; margin-top: 0;
+
+      a {
+         display: block;
+         @extend %round;
+         @include span-all(6, 8, 12, 12);
+         margin-bottom: $base;
+         background-color: rgba($ltblue, 0.3);
+         padding-right: $base/4; padding: $base; 
+         line-height: 30px;
+         // @extend %hover-styles;
+
+         &:hover {
+            background-color: rgba($ltblue, 0.1);
+            @extend %ease;
+            padding-left: 35px;
+            .icon-right {
+               padding-right: 10px;
+            }
+         }
+      }
+
+      .icon-right {
+         float: right;
+         padding-top: 2px;
+      }
+   }
+
+
+
+
+   .menu {
+      text-align: center;
+      // .back {@include span-columns(1);  margin-top: 8px; position: relative; top: 2px; svg {height: 25px; width: 25px; @extend %rotate180}} //back arrow
+      // .title {@include span-all(5, 6, 10, 10);}
+      .back { 
+         svg {@extend %rotate180} padding-right: 12px; 
+         &:hover {
+            .back-icon {margin-right: 6px;}
+            h1 {margin-left: 6px}
+         }
+      }
+      h1 {display: inline-block}
+   }
+
+   .distances {
+      @extend %ease;
+      @extend %shadows;
+      font-size: 42px;
+
+      a { 
+         margin-bottom: $base/2;
+         @include span-columns(3);
+         @include omega(4n);
+         text-align: center;
+         color: $peach;
+
+         @extend %hover-styles;
+         @extend %round;
+
+         &:hover{
+            background-color: transparent;
+         }
+      }
+      .active {
+         color: $fb-blue;
+      }
+
+   }
+}
+
+#map {
+
+   .row {
+      @include span-columns(12);
+      @include row(table);
+      @extend %roboto; font-weight: 300;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+
+      &:hover {
+         @extend %ease;
+         padding-left: 35px;
+      }
+
+      div {
+         padding: 20px $base/4;
+
+      }
+
+      // dist
+      div:nth-child(1) {
+         @include span-columns(2); 
+         font-size: 18px;
+         padding-left: 8px;
+
+      }
+
+      // turn
+      div:nth-child(2) {
+         @include span-columns(2); 
+         font-size: 18px;
+         text-align: center;
+      }
+
+      // street
+      div:nth-child(3) {
+         @include span-columns(8); 
+         font-size: 18px;
+         background: rgba($emerald, 0.3);
+         padding-left: 12px;
+      }
+   }
+
+   .water {
+      background: rgba($blue, 0.2);
+      div:nth-child(3):before {
+         content: "H2O";
+         background: $blue;
+         font-size: 12px;
+         padding: 3px; margin-right: 8px;
+         @extend %round;
+         color: white;
+      }
+   }
+
+   .done {
+      color: #bbb !important; 
+      div {background-color: rgba(white, 0.3) !important;}
+      border-bottom: #ddd;
+      padding-left: 35px;
+      &.water {
+         background-color: transparent;
+         div:nth-child(3):before {
+            background: rgba($blue,0.4);
+         }
+      }
+   }
+}
+
+
+

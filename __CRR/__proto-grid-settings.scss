@@ -1,0 +1,47 @@
+
+
+// basic sizes
+
+$max-width: em(960);
+$base: 0.8125em;
+$margin: $base;
+
+
+
+// *********************************************************
+// BREAKPOINTS
+// *********************************************************
+
+// these are intended as "small-first" 
+// - Small will apply to all sizes above Small
+// - Medium will apply to all sizes above Medium, etc.
+// - the -only tag applies to only that size
+// - the -max tag applies to that size and under
+
+
+// 0 	=> 480: 6
+// 481 	=> 767: 8
+// 768  => 979: 12
+// 980  => inf: 12 
+
+
+// $visual-grid: true;
+// $visual-grid-color: black;
+// $visual-grid-opacity: 0.1;
+
+// Key Grid Breakpoints. Other breakpoint helpers included in proto_framework, but these will define the main grid.
+// Helpers can't be added here becuase they interfere with Neat's grid system
+$small: new-breakpoint(min-width 0px 6);                             // 0 and above
+// $small-only: new-breakpoint(max-width 480px 6);                      // 0 up to 480
+
+$medium: new-breakpoint(min-width 481px 8);                          // 481 and above
+// $medium-only: new-breakpoint(min-width 481px max-width 767px 8);     // 481 to 767
+// $medium-max: new-breakpoint(max-width 767px 8);                      // 0 up to 767
+
+$large: new-breakpoint(min-width 768px 12);                         // 768 and above
+// $large-only: new-breakpoint(min-width 768 max-width 979 12);        // 768 to 979
+// $large-max: new-breakpoint(max-width 979px 12);                     // 0 up to 979
+
+// $largest: new-breakpoint(min-width 980px 12);                        // 980 and above (infinite)
+
+  
