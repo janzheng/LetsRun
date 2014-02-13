@@ -65,7 +65,7 @@ mileage: 10
 * S McDonough St <div class="note"> Cross S McDonough onto Oakview Rd</div>
 
 * 
-* Follow 
+* Cont. 
 * Follow Oakview Rd as it goes uphill
 
 (water)* 3.25 
