@@ -76,14 +76,6 @@ mileage: 8
 * Cont. 
 * E. Lake Drive <div class="note"> You will cross Hosea Williams Dr (3.85 miles) and then Memorial Dr (4.16 miles)</div>
 
-* 3.18 
-* Cross 
-* Hosea Williams Dr
-
-* 3.49 
-* L 
-* Memorial Drive <div class="note"> (next turn almost immediate)</div>
-
 * 4.31
 * R 
 * Alston Dr <div class="note"> E. Lake Golf Course is on the left</div>
