@@ -116,7 +116,7 @@ mileage: 8
 * L
 * Ansley St
 
-(water)* 8
+* 8
 * L
 * S. McDonough St
 
