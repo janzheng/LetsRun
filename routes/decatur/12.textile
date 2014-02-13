@@ -1,0 +1,166 @@
+---
+layout: framework
+title: Decatur
+root: ../../
+mileage: 12
+--- 
+
+<notextile>
+{% include decatur.html %}
+</notextile>
+
+<div id="map">
+	<div class="container">
+
+* 
+* R 
+* E. Trinity <div class="note"> Exit out of Big Peach Running Company </div>
+
+* 0.18
+* R 
+* Commerce
+
+* 0.32
+* R 
+* W Ponce De Leon
+
+* 0.46 
+* R 
+* Church St
+
+* 0.65 
+* L 
+* E.Trinity Pl<div class="note"> Follow over railroad tracks</div>
+
+* 0.83 
+* R 
+* College Ave
+
+* 1.08 
+* L 
+* S McDonough St
+
+* 1.17 
+* L 
+* Buttrick Dr <div class="note"> (no sign but 1st drive/Follow this path straight thru Agnus Scott Campus. You will see the library on your right 1/2 way thru.</div>
+
+* 1.39 
+* R 
+* S Candler St
+
+* 1.83 
+* R 
+* Green St <div class="note"> Turn is easy to miss. Continue thru PATH area and cross S McDonough </div>
+
+* 2.06 
+* Cross 
+* S McDonough St <div class="note"> Cross S McDonough onto Oakview Rd</div>
+
+* 
+* Follow 
+* Oakview Rd as it goes uphill
+
+(water)* 2.55 
+* L 
+* E. Lake Dr <div class="note"> Welcome to Oakhurst! H20 before crossing road</div>
+
+* 
+* Cont. 
+* E. Lake Drive- heading south
+
+* 3.18 
+* Cross 
+* Hosea Williams Dr
+
+* 3.49 
+* L 
+* Memorial Drive <div class="note"> (next turn almost immediate)</div>
+
+* 3.66 
+* R 
+* Green Ave <div class="note">No sign- but first turn. E. Lake Park is on your left</div>
+
+* 3.77 
+* R 
+* Alston Dr <div class="note"> E. Lake Golf Course is on the left</div>
+
+* 4.2 
+* R 
+* 2nd Ave <div class="note"> Cross Memorial Dr
+
+* 4.59 
+* L 
+* Hosea Williams Dr
+
+(water)* 4.8 
+* L 
+* Oakview Rd <div class="note">Stay in right lane. H20 on north side of intersection of Hosea and Oakview in median</div>
+
+* 5.4 
+* L 
+* Hosea Williams Dr <div class="note"> Welcome to Kirkwood</div>
+
+* 5.69 
+* R 
+* Warren St
+
+* 5.84 
+* R 
+* Delano Dr
+
+* 6.17 
+* R 
+* Norwood Ave <div class="note">Sign is on your left a bit obscured</div>
+
+* 6.3 
+* R 
+* Ridgedale 
+
+* 6.4 
+* L 
+* Kirkwood Rd
+
+* 6.53 
+* L 
+* Hosea Williams Dr
+
+(water)* 7.05 
+* L 
+* Oakview Rd <div class="note"> Same water stop you JUST hit.</div>
+
+(water)* 7.89 
+* L 
+* E. Lake Dr <div class="note"> Cross under College Ave/Marta tracks at mile 8.7ish</div>
+
+* 9.11 
+* L 
+* Ridgeland Rd
+
+* 9.24 
+* R 
+* McLendon Ave
+
+(water)* 9.75 
+* R 
+* Lakeshore Dr
+
+* 10.25 
+* R 
+* Ponce De Leon Ave
+
+(water)* 11 
+* Vr Rt 
+* W Ponce De Leon Ave <div class="note"> H20 at corner of Ponce and W. Parkwood</div>
+
+* 11.44 
+* R 
+* W Trinity Pl
+
+* 12 
+* L 
+* Into Big Peach Parking Lot. <div class="note"> Congrats! You did it!</div>
+
+	</div>
+</div>
+
+<div class="clear"></div>

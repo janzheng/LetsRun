@@ -174,7 +174,7 @@ a, a:hover, a:visited, a:focus {
       font-size: $h1; font-weight: 700;
       text-align: center;
       color: $turqoise;
-      @extend %round; @extend .shadow;
+      @extend %round; 
    }
 
    h2 {
@@ -249,7 +249,7 @@ a, a:hover, a:visited, a:focus {
          text-align: center;
          color: $peach;
 
-         @extend %hover-styles;
+         // @extend %hover-styles;
          @extend %round;
 
          &:hover{
@@ -265,50 +265,57 @@ a, a:hover, a:visited, a:focus {
 
 #map {
 
-   .row {
+   ul {
+      display: block;
+      @extend .row;
+
       @include span-columns(12);
       @include row(table);
       @extend %roboto; font-weight: 300;
       border-bottom: 1px solid #ccc;
       cursor: pointer;
+      padding-right: 0 !important;
+      font-size: 18px;
 
+      .note {
+         font-size: 14px;
+         font-weight: 300;
+      }
       &:hover {
          @extend %ease;
          padding-left: 35px;
       }
 
-      div {
+      li {
          padding: 20px $base/4;
-
+         display: block;
       }
 
       // dist
-      div:nth-child(1) {
+      li:nth-child(1) {
          @include span-columns(2); 
-         font-size: 18px;
          padding-left: 8px;
 
       }
 
       // turn
-      div:nth-child(2) {
+      li:nth-child(2) {
          @include span-columns(2); 
-         font-size: 18px;
-         text-align: center;
+         text-align: left;
       }
 
       // street
-      div:nth-child(3) {
+      li:nth-child(3) {
          @include span-columns(8); 
-         font-size: 18px;
          background: rgba($emerald, 0.3);
          padding-left: 12px;
+         font-weight: 400;
       }
    }
 
    .water {
       background: rgba($blue, 0.2);
-      div:nth-child(3):before {
+      li:nth-child(3):before {
          content: "H2O";
          background: $blue;
          font-size: 12px;
@@ -320,12 +327,12 @@ a, a:hover, a:visited, a:focus {
 
    .done {
       color: #bbb !important; 
-      div {background-color: rgba(white, 0.3) !important;}
+      li {background-color: white !important;}
       border-bottom: #ddd;
       padding-left: 35px;
       &.water {
          background-color: transparent;
-         div:nth-child(3):before {
+         li:nth-child(3):before {
             background: rgba($blue,0.4);
          }
       }

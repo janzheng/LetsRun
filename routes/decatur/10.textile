@@ -1,0 +1,150 @@
+---
+layout: framework
+title: Decatur
+root: ../../
+mileage: 10
+--- 
+
+<notextile>
+{% include decatur.html %}
+</notextile>
+
+<div id="map">
+	<div class="container">
+
+* 
+* R 
+* E. Trinity <div class="note"> Exit out of Big Peach Running Company </div>
+
+* 0.18
+* R 
+* Commerce
+
+* 0.32 
+* R 
+* W Ponce De Leon
+
+* 0.85 
+* R 
+* Sycamore Place
+
+* 0.92 
+* R 
+* Sycamore St
+
+* 1.22 
+* L 
+* Church St
+
+* 1.35
+* L 
+* E.Trinity Pl <div class="note">  Follow over railroad tracks</div>
+
+* 1.53
+* R 
+* College Ave
+
+* 1.77
+* L 
+* S McDonough St <div class="note"> Start looking for next turn now!</div>
+
+* 1.17 
+* L 
+* Buttrick Dr <div class="note"> (no sign but 1st drive/Follow this path straight thru Agnus Scott Campus. You will see the library on your right 1/2 way thru. Path will dead end at S Candler</div>
+
+* 2.06
+* R 
+* S Candler St
+
+* 2.5
+* R 
+* Green St <div class="note"> Turn is easy to miss. Continue thru PATH area and cross S McDonough </div>
+
+* 2.75
+* Cross 
+* S McDonough St <div class="note"> Cross S McDonough onto Oakview Rd</div>
+
+* 
+* Follow 
+* Follow Oakview Rd as it goes uphill
+
+(water)* 3.25 
+* L 
+* E. Lake Dr <div class="note"> Welcome to Oakhurst! H20 on right side before taking left on E Lake Dr</div>
+
+* 
+* Cont. 
+* E. Lake Drive- you will cross Hosea Williams Dr (3.85 miles)
+
+* 4.16
+* L 
+* Memorial Drive <div class="note"> next turn almost immediate</div>
+
+* 4.25
+* R 
+* Green Ave <div class="note">No sign- but first turn. E. Lake Park is on your left</div>
+
+* 4.4 
+* R 
+* Alston Dr <div class="note"> E. Lake Golf Course is on the left</div>
+
+* 4.78
+* R 
+* 3rd Ave <div class="note"> Be careful crossing Memorial Dr
+
+* 5
+* L 
+* Cottage Grove Ave
+
+* 5.15 
+* R 
+* 1st Ave
+
+* 5.3
+* L 
+* Hosea Williams Dr 
+
+(water)* 5.41
+* L 
+* Oakview Rd <div class="note">Stay in right lane. H20 on right side of the road.  of Hosea and Oakview in median</div>
+
+* 6
+* R 
+* Hosea Williams Dr <div class="note"> No street sign- but the turn is marked by 'Welcome to Kirkwood' sign</div>
+
+* 6.54
+* R 
+* Oakview Rd <div class="note">Same water stop you JUST hit</div>
+
+(water)* 7.4
+* R 
+* E. Lake Drive. <div class="note">This was the 1st water stop- hit it again b/4 continuing. You will cross under some bridges before the next turn!</div>
+
+* 8.33
+* R
+* E Parkwood Rd
+
+* 8.4 
+* L
+* W Parkwood <div class="note">sign is on the right side of the rd. This turn is immediately after turning onto E Parkwood</div>
+
+(water)* 8.89 
+* R 
+* W Ponce De Leon <div class="note">W. Ponce De Leon starts as a long hill from here</div>
+
+* 10.1 
+* R
+* Into Decatur Square <div class="note">This turn is just after the Courthouse building on right- this is also where Clairmont comes into Ponce from the left. Run straight thru keeping stores on left</div>
+
+* 10.2
+* L
+* E Trinity Pl
+
+* 12 
+* L 
+* Into Big Peach Parking Lot. <div class="note"> Congrats! You did it!</div>
+
+	</div>
+</div>
+
+<div class="clear"></div>

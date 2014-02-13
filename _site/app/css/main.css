@@ -435,53 +435,53 @@ body, select, input, textarea {
 
 @media screen and (min-width: 0px) {
   /* line 87, ../../__CRR/__proto-framework.scss */
-  .row {
+  .row, #map ul {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 100%;
   }
   /* line 40, ../../__CRR/neat/grid/_span-columns.scss */
-  .row:last-child {
+  .row:last-child, #map ul:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 481px) {
   /* line 87, ../../__CRR/__proto-framework.scss */
-  .row {
+  .row, #map ul {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 100%;
   }
   /* line 40, ../../__CRR/neat/grid/_span-columns.scss */
-  .row:last-child {
+  .row:last-child, #map ul:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
   /* line 87, ../../__CRR/__proto-framework.scss */
-  .row {
+  .row, #map ul {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
   }
   /* line 40, ../../__CRR/neat/grid/_span-columns.scss */
-  .row:last-child {
+  .row:last-child, #map ul:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 980px) {
   /* line 87, ../../__CRR/__proto-framework.scss */
-  .row {
+  .row, #map ul {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
   }
   /* line 40, ../../__CRR/neat/grid/_span-columns.scss */
-  .row:last-child {
+  .row:last-child, #map ul:last-child {
     margin-right: 0;
   }
 }
@@ -504,7 +504,7 @@ body, select, input, textarea {
 }
 
 /* line 125, ../../__CRR/__proto-main.scss */
-body *, html *, a, a:hover, a:visited, a:focus, .content h2 a, .content .route-list a:hover, .content .distances, #map .row:hover {
+body *, html *, a, a:hover, a:visited, a:focus, .content h2 a, .content .route-list a:hover, .content .distances, #map ul:hover {
   -webkit-transition: all 230ms ease;
   -moz-transition: all 230ms ease;
   -ms-transition: all 230ms ease;
@@ -579,7 +579,7 @@ body *, html *, a, a:hover, a:visited, a:focus, .content h2 a, .content .route-l
 }
 
 /* line 109, ../../__CRR/main.scss */
-.content h2, .content .route-list, #map .row {
+.content h2, .content .route-list, #map ul {
   font-family: 'Roboto', roboto, sans-serif;
 }
 
@@ -609,7 +609,7 @@ body *, html *, a, a:hover, a:visited, a:focus, .content h2 a, .content .route-l
 }
 
 /* line 136, ../../__CRR/main.scss */
-.content h1, .content .route-list a, .content .distances a, #map .water div:nth-child(3):before {
+.content h1, .content .route-list a, .content .distances a, #map .water li:nth-child(3):before {
   border-radius: 4px;
 }
 
@@ -801,7 +801,8 @@ a, a:hover, a:visited, a:focus {
 }
 
 /* line 268, ../../__CRR/main.scss */
-#map .row {
+#map ul {
+  display: block;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -814,50 +815,56 @@ a, a:hover, a:visited, a:focus {
   font-weight: 300;
   border-bottom: 1px solid #ccc;
   cursor: pointer;
+  padding-right: 0 !important;
+  font-size: 18px;
 }
 /* line 40, ../../__CRR/neat/grid/_span-columns.scss */
-#map .row:last-child {
+#map ul:last-child {
   margin-right: 0;
 }
-/* line 275, ../../__CRR/main.scss */
-#map .row:hover {
+/* line 280, ../../__CRR/main.scss */
+#map ul .note {
+  font-size: 14px;
+  font-weight: 300;
+}
+/* line 284, ../../__CRR/main.scss */
+#map ul:hover {
   padding-left: 35px;
 }
-/* line 280, ../../__CRR/main.scss */
-#map .row div {
+/* line 289, ../../__CRR/main.scss */
+#map ul li {
   padding: 20px 4px;
+  display: block;
 }
-/* line 286, ../../__CRR/main.scss */
-#map .row div:nth-child(1) {
+/* line 295, ../../__CRR/main.scss */
+#map ul li:nth-child(1) {
   display: table-cell;
   padding-right: 1.17883%;
   width: 15.88078%;
-  font-size: 18px;
   padding-left: 8px;
 }
-/* line 294, ../../__CRR/main.scss */
-#map .row div:nth-child(2) {
+/* line 302, ../../__CRR/main.scss */
+#map ul li:nth-child(2) {
   display: table-cell;
   padding-right: 1.17883%;
   width: 15.88078%;
-  font-size: 18px;
-  text-align: center;
+  text-align: left;
 }
-/* line 301, ../../__CRR/main.scss */
-#map .row div:nth-child(3) {
+/* line 308, ../../__CRR/main.scss */
+#map ul li:nth-child(3) {
   display: table-cell;
   padding-right: 2.06295%;
   width: 67.94373%;
-  font-size: 18px;
   background: rgba(46, 204, 113, 0.3);
   padding-left: 12px;
+  font-weight: 400;
 }
-/* line 309, ../../__CRR/main.scss */
+/* line 316, ../../__CRR/main.scss */
 #map .water {
   background: rgba(52, 126, 237, 0.2);
 }
-/* line 311, ../../__CRR/main.scss */
-#map .water div:nth-child(3):before {
+/* line 318, ../../__CRR/main.scss */
+#map .water li:nth-child(3):before {
   content: "H2O";
   background: #347eed;
   font-size: 12px;
@@ -865,21 +872,21 @@ a, a:hover, a:visited, a:focus {
   margin-right: 8px;
   color: white;
 }
-/* line 321, ../../__CRR/main.scss */
+/* line 328, ../../__CRR/main.scss */
 #map .done {
   color: #bbb !important;
   border-bottom: #ddd;
   padding-left: 35px;
 }
-/* line 323, ../../__CRR/main.scss */
-#map .done div {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+/* line 330, ../../__CRR/main.scss */
+#map .done li {
+  background-color: white !important;
 }
-/* line 326, ../../__CRR/main.scss */
+/* line 333, ../../__CRR/main.scss */
 #map .done.water {
   background-color: transparent;
 }
-/* line 328, ../../__CRR/main.scss */
-#map .done.water div:nth-child(3):before {
+/* line 335, ../../__CRR/main.scss */
+#map .done.water li:nth-child(3):before {
   background: rgba(52, 126, 237, 0.4);
 }

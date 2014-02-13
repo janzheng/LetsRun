@@ -1,0 +1,142 @@
+---
+layout: framework
+title: Decatur
+root: ../../
+mileage: 8
+--- 
+
+<notextile>
+{% include decatur.html %}
+</notextile>
+
+<div id="map">
+	<div class="container">
+
+* 
+* R 
+* E. Trinity <div class="note"> Exit out of Big Peach Running Company </div>
+
+* 0.18
+* R 
+* Commerce
+
+* 0.32
+* R 
+* W Ponce De Leon
+
+* 0.85 
+* R 
+* Sycamore Place
+
+* 0.92 
+* R 
+* Sycamore St
+
+* 1.22 
+* L 
+* Church St
+
+* 1.35 
+* L 
+* E.Trinity Pl <div class="note"> Follow E. Trinity Pl over railroad tracks </div>
+
+* 1.53 
+* R 
+* College Ave
+
+* 1.77 
+* L 
+* S <div class="note">McDonough St start looking for next turn now!</div>
+
+* 1.85
+* L 
+* Buttrick Dr <div class="note"> No sign, but 1st drive/entryway you come to. Follow this path straight thru Agnus Scott Campus. You will see the library on your right 1/2 way thru. Path will dead end at S Candler</div>
+
+* 2.06
+* R 
+* S Candler St
+
+* 2.5 
+* R 
+* Green St <div class="note"> Turn is easy to miss. Once on Green St, continue onto PATH and run straight thru! </div>
+
+* 2.75 
+* Cross 
+* S McDonough St <div class="note"> Cross S McDonough onto Oakview Rd</div>
+
+* 
+* Follow 
+* Oakview Rd as it goes uphill
+
+(water)* 3.25
+* L 
+* E. Lake Dr <div class="note"> Welcome to Oakhurst! H20 on right side before taking left on E Lake Dr</div>
+
+* 
+* Cont. 
+* E. Lake Drive <div class="note"> You will cross Hosea Williams Dr (3.85 miles) and then Memorial Dr (4.16 miles)</div>
+
+* 3.18 
+* Cross 
+* Hosea Williams Dr
+
+* 3.49 
+* L 
+* Memorial Drive <div class="note"> (next turn almost immediate)</div>
+
+* 4.31
+* R 
+* Alston Dr <div class="note"> E. Lake Golf Course is on the left</div>
+
+* 4.64
+* R 
+* 3rd Ave <div class="note"> Be careful crossing Memorial Dr
+
+* 4.84 
+* L 
+* Cottage Grove Ave
+
+* 5 
+* R 
+* 1st Ave
+
+* 5.16
+* L 
+* Hosea Williams Dr
+
+(water)* 5.27
+* L 
+* Oakview Rd <div class="note">Stay in right lane. H20 on right side of intersection of Hosea and Oakview in median</div>
+
+* 5.87
+* R
+* Hosea Williams Dr <div class="note"> No street sign- but the turn is marked by 'Welcome to Kirkwood' sign</div>
+
+(water)* 6.4
+* L 
+* Oakview Rd <div class="note"> Same water stop you JUST hit.</div>
+
+*  
+* Cont. 
+* Oakview Rd <div class="note"> Crossing over E. Lake Dr at 7.25 miles!</div>
+
+* 7.4
+* L
+* Ansley St
+
+(water)* 8
+* L
+* S. McDonough St
+
+* 8.4
+* R 
+* E Trinity Pl
+
+* 8.45
+* L 
+* Into Big Peach Parking Lot. <div class="note"> Congrats! You did it!</div>
+
+	</div>
+</div>
+
+<div class="clear"></div>

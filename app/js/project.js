@@ -11,7 +11,7 @@
 
 
 $( document ).ready(function() {
-  $( "#map .row" ).bind( "click", function( event ) {
+  $( "#map ul" ).bind( "click", function( event ) {
     // console.log( "The mouse cursor is at (" + event.pageX + ", " + event.pageY + ")" );
 
     $(this).toggleClass( "done" );
