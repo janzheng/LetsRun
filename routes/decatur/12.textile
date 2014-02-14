@@ -24,35 +24,43 @@ mileage: 12
 * R 
 * W Ponce De Leon
 
-* 0.46 
+* 0.85 
+* R 
+* Sycamore Place
+
+* 0.92 
+* R 
+* Sycamore St
+
+* 1.22 
 * R 
 * Church St
 
-* 0.65 
+* 1.35
 * L 
-* E.Trinity Pl<div class="note"> Follow over railroad tracks</div>
+* E.Trinity Pl <div class="note"> Follow over railroad tracks</div>
 
-* 0.83 
+* 1.53
 * R 
 * College Ave
 
-* 1.08 
+* 1.77
 * L 
-* S McDonough St
+* S McDonough St <div class="note"> Start looking for next turn now!</div>
 
-* 1.17 
+* 1.85
 * L 
-* Buttrick Dr <div class="note"> (no sign but 1st drive/Follow this path straight thru Agnus Scott Campus. You will see the library on your right 1/2 way thru.</div>
+* Buttrick Dr <div class="note"> No sign but 1st drive. Follow this path straight thru Agnus Scott Campus. You will see the library on your right 1/2 way thru. Path will dead end at S Candler</div>
 
-* 1.39 
+* 2.06
 * R 
 * S Candler St
 
-* 1.83 
+* 2.5
 * R 
 * Green St <div class="note"> Turn is easy to miss. Continue thru PATH area and cross S McDonough </div>
 
-* 2.06 
+* 2.75
 * Cross 
 * S McDonough St <div class="note"> Cross S McDonough onto Oakview Rd</div>
 
@@ -60,105 +68,101 @@ mileage: 12
 * Cont. 
 * Follow Oakview Rd as it goes uphill
 
-(water)* 2.55 
+(water)* 3.25
 * L 
-* E. Lake Dr <div class="note"> Welcome to Oakhurst! H20 before crossing road</div>
+* E. Lake Dr <div class="note"> Welcome to Oakhurst! H20 on right before taking left on E Lake Dr</div>
 
 * 
 * Cont. 
-* E. Lake Drive- heading south
+* E. Lake Drive- cross Hosea Williams Dr (3.85 miles)
 
-* 3.18 
-* Cross 
-* Hosea Williams Dr
-
-* 3.49 
+* 4.16
 * L 
-* Memorial Drive <div class="note"> (next turn almost immediate)</div>
+* Memorial Drive <div class="note"> Next turn almost immediate</div>
 
-* 3.66 
+* 4.25
 * R 
 * Green Ave <div class="note">No sign- but first turn. E. Lake Park is on your left</div>
 
-* 3.77 
+* 4.4
 * R 
 * Alston Dr <div class="note"> E. Lake Golf Course is on the left</div>
 
-* 4.2 
+* 4.78
 * R 
-* 2nd Ave <div class="note"> Cross Memorial Dr
+* 3rd Ave <div class="note"> Be careful crossing Memorial Dr
 
-* 4.59 
+* 5 
+* L 
+* Cottage Grove Ave
+
+* 5.15 
+* R 
+* 1st Ave
+
+* 5.3
 * L 
 * Hosea Williams Dr
 
-(water)* 4.8 
+(water)* 5.41
 * L 
-* Oakview Rd <div class="note">Stay in right lane. H20 on north side of intersection of Hosea and Oakview in median</div>
+* Oakview Rd <div class="note">Stay in right lane. H20 on right side of intersection of Hosea and Oakview in median</div>
 
-* 5.4 
-* L 
-* Hosea Williams Dr <div class="note"> Welcome to Kirkwood</div>
+* 6
+* R
+* Hosea Williams Dr <div class="note"> No street sign. Turn is marked by "Welcome to Kirkwood" sign</div>
 
-* 5.69 
-* R 
-* Warren St
-
-* 5.84 
-* R 
-* Delano Dr
-
-* 6.17 
-* R 
-* Norwood Ave <div class="note">Sign is on your left a bit obscured</div>
-
-* 6.3 
-* R 
-* Ridgedale 
-
-* 6.4 
-* L 
-* Kirkwood Rd
-
-* 6.53 
-* L 
-* Hosea Williams Dr
-
-(water)* 7.05 
+(water)* 6.54
 * L 
 * Oakview Rd <div class="note"> Same water stop you JUST hit.</div>
 
-(water)* 7.89 
+* 7.4
 * L 
-* E. Lake Dr <div class="note"> Cross under College Ave/Marta tracks at mile 8.7ish</div>
+* E. Lake Dr <div class="note"> This was the 1st water stop- hit it again b/4 continuing. You will cross under some bridges before the next turn!</div>
 
-* 9.11 
+* 8.62 
 * L 
-* Ridgeland Rd
+* Ridgecrest Rd
 
-* 9.24 
+* 8.75
 * R 
 * McLendon Ave
 
-(water)* 9.75 
+(water)* 9.25
 * R 
-* Lakeshore Dr
+* Lakeshore Dr <div class="note"> Lakeshore Dr will dead-end into Ponce De Leon</div>
 
-* 10.25 
+* 9.75 
+* Cross
+* N Ponce De Leon <div class="note">N Ponce is slightly off set to the left when you are at the light looking across Ponce</div>
+
+* 10.3 
+* L 
+* Ponce De Leon <div class="note"> Go under bridge and cross the street immediately when u can (get on right side of Ponce!)</div>
+
+(water)* 10.5 
+* Stay Rt.
+* W Ponce De Leon <div class="note"> H20 is on the rt hand side at W Parkwood and W Ponce De Leon</div>
+
+* 11.8 
 * R 
-* Ponce De Leon Ave
+* N Candler St
 
-(water)* 11 
-* Vr Rt 
-* W Ponce De Leon Ave <div class="note"> H20 at corner of Ponce and W. Parkwood</div>
-
-* 11.44 
+* 11.9 
 * R 
-* W Trinity Pl
+* Sycamore
 
 * 12 
 * L 
-* Into Big Peach Parking Lot. <div class="note"> Congrats! You did it!</div>
+* Church St
+
+* 12.1 
+* R
+* E Trinity Pl
+
+* 12.2 
+* R 
+* Into Big Peach parking lot
 
 	</div>
 </div>
