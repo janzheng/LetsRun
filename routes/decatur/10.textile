@@ -140,7 +140,7 @@ mileage: 10
 * L
 * E Trinity Pl
 
-* 12 
+* 10.2 
 * L 
 * Into Big Peach Parking Lot. <div class="note"> Congrats! You did it!</div>
 
